@@ -39,7 +39,7 @@
 
   const setRandomProject = (projects, cb) => {
     const randomInt = getRandomInt(projects.length);
-    const project = projects[randomInt];
+    const project = projects[randomInt] || {};
     cb(project.projectName);
   };
 
